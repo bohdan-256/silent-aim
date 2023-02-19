@@ -12,25 +12,16 @@ local RunService = game:GetService("RunService")
 
 local features = {
 silentaim = true;
-fov = 2000;
-}
-
-local teamCheck = false
-local fov = 150
-local smoothing = 1
-
+fov = 5000;
 local RunService = game:GetService("RunService")
-
-
-local fovcircle = Drawing.new("Circle")
-fovcircle.Visible = settings.Aimbot_Draw_FOV
-fovcircle.Radius = settings.Aimbot_FOV_Radius
-fovcircle.Color = settings.Aimbot_FOV_Color
-fovcircle.Thickness = 1
-fovcircle.Filled = false
-fovcircle.Transparency = 1
-
-fovcircle.Position = Vector2.new(dwCamera.ViewportSize.X / 2, dwCamera.ViewportSize.Y / 2)
+local FOVring = Drawing.new("Circle")
+FOVring.Visible = true
+FOVring.Thickness = 1.5
+FOVring.Radius = fov
+FOVring.Transparency = 1
+FOVring.Color = Color3.fromRGB(255, 128, 128)
+FOVring.Position = workspace.CurrentCamera.ViewportSize/2
+}
 
 function getnearest()
 local nearestmagnitude = math.huge
