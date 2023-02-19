@@ -12,15 +12,7 @@ local RunService = game:GetService("RunService")
 
 local features = {
 silentaim = true;
-fov = 5000;
-local RunService = game:GetService("RunService")
-local FOVring = Drawing.new("Circle")
-FOVring.Visible = true
-FOVring.Thickness = 1.5
-FOVring.Radius = fov
-FOVring.Transparency = 1
-FOVring.Color = Color3.fromRGB(255, 128, 128)
-FOVring.Position = workspace.CurrentCamera.ViewportSize/2
+fov = 10000;
 }
 
 function getnearest()
