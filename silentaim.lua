@@ -12,7 +12,7 @@ local RunService = game:GetService("RunService")
 
 local features = {
 silentaim = true;
-fov = 10000;
+fov = 1;
 }
 
 function getnearest()
