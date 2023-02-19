@@ -9,10 +9,19 @@ local UserInputService = game:GetService("UserInputService")
 local target = false
 local RunService = game:GetService("RunService")
 
+
 local features = {
 silentaim = true;
 fov = 2000;
 }
+
+local FOVring = Drawing.new("Circle")
+FOVring.Visible = true
+FOVring.Thickness = 1.5
+FOVring.Radius = fov
+FOVring.Transparency = 1
+FOVring.Color = Color3.fromRGB(255, 128, 128)
+FOVring.Position = workspace.CurrentCamera.ViewportSize/2
 
 function getnearest()
 local nearestmagnitude = math.huge
