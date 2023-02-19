@@ -1,3 +1,5 @@
+--Made by DarkFunder
+
 local Players = game:GetService("Players")
 local LocalPlayer = Players.LocalPlayer
 local mouse = LocalPlayer:GetMouse()
@@ -65,7 +67,7 @@ local enemy = getnearest()
 if enemy and enemy.Character and enemy.Character:FindFirstChild("Humanoid") and enemy.Character.Humanoid.Health > 0 then                
 local vector, onScreen = Camera:WorldToScreenPoint(enemy.Character["Head"].Position)
 local magnitude = (Vector2.new(mouse.X, mouse.Y) - Vector2.new(vector.X, vector.Y)).magnitude
-target = workspace[enemy.Name]["Head"].Position\
+target = workspace[enemy.Name]["Head"].Position
 end
 else
 target = nil
